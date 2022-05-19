@@ -31,3 +31,38 @@
  type="week"  1월 첫째 주 기준으로 몇 번째 주인지 표시됨
 ```
 
+### 시간 입력을 나타내는 type="time" ,  type="datetime" ,  type="datetime-local"
+```html
+기본형 -> <input type="time | datetime | datetime-local"> 
+
+ type="time"  3개의 항목으로 나타나며 첫 번째 항목부터 '오전' 과 '오후' 나머지는 '시' 와 '분'
+ type="datetime" ,  type="datetime-local" 사용자가 웹 문서를 보고 있는 지역에 맞는 날짜와 시간을 함께 입력할 수 있다.
+```
+
+### 전송 , 리셋 버튼을 나타내는 type="submit" , type="reset". 
+```html
+기본형 -> <input type="submit | reset" value="버튼에 표시할 내용">
+```
+
+### 이미지 버튼을 나타내는 type="image" 
+```html
+기본형 -> <input type="image" src="이미지 경로" alt="대체 텍스트">
+```
+
+### 기본 버튼을 나타내는 type="button"
+```html
+기본형 -> <input type="button value="버튼에 표시할 내용">
+```
+
+### 파일을 첨부할 때 사용하는 type="file"
+```html
+기본형 -> <input type="file">
+```
+
+### 히든 필드 만들 때 사용하는 type="hidden">
+*화면의 폼에는 보이지 않지만 사용자가 입력을 마치면 폼과 함께 서버로 전송되는 요소 
+```html
+기본형 -> <input type="hidden" name="이름" value="서버로 넘길 값">
+```
+
+
