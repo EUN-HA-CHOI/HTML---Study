@@ -18,8 +18,32 @@
 
 ```html
 *입력한 폼 서버로 보내기
-<form action="000.php"> </form>  
+ <form action="000.php"> </form>  
 
 *자동 완성 기능 autocomplate 속성  
 *자동 완성 기능 끄기  
-<form action="000.php"autocomplate="off" > </form>  
+ <form action="000.php"autocomplate="off" > </form>  
+
+### 폼 요소를 그룹으로 묶는 fieldset , legend 태그  
+```html
+  기본형 -> <fieldset [속성="속성값"]></fieldset>
+
+  기본형 -> <fieldset>
+             <legend>그룹 이름</legend>
+          </fieldset>
+```  
+
+ 
+### 폼 요소에 레이블을 붙이는 lable 태그
+``` html
+기본형 -> <lable>레이블명<input></lable>
+```
+
+* 사용자가 아이디를 입력하는 폼 요소의 id 속성값을 <lable> 태그의 for 속성에게 알려주기 
+```html 
+기본형 -> <lable for="id"명>레이블명<input id="id명"></lable>
+```
+
+
+
+
