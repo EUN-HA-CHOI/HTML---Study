@@ -10,6 +10,45 @@
              <caption>표 제목</caption>
           </table>
 ``` 
+* 예시 
+``` html
+<head>
+  <meta charset="UTF-8">
+  <title>상품 소개 페이지</title>
+  <style>
+    table, th, td {
+      border:1px solid #ccc;
+      border-collapse: collapse;
+    }
+    th, td { padding: 10px 20px; }
+  </style>
+   
+</head>
+<body>
+  <table>
+    <caption>커피</caption>
+    <thead>
+      <tr>
+        <th>에스프레소</th>
+        <th>아메리카노</th>
+        <th>카푸치노</th> 
+        <th>카페라떼</th>   
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>곱게 간 원두 가루에 뜨거운 물로 뽑아낸 커피</td>
+        <td>에스프레소에 물을 넣어 연하게 마시는 커피</td>
+        <td>우유를 섞은 커피에 계핏가루를 뿌린 커피</td>
+        <td>카페라떼는 우유를 이용한 커피</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+```
+<img width="490" alt="스크린샷 2022-05-20 오후 4 08 25" src="https://user-images.githubusercontent.com/97012561/169472909-39eba8ef-8377-4ac4-8b54-647cecb2f394.png">
+
+
 
 ### 표를 만드는 tr 태그와 셀을 만드는 td , th 태그 
 ```html 
@@ -122,7 +161,7 @@
 * 결과
 <img width="370" alt="스크린샷 2022-05-19 오후 4 53 26" src="https://user-images.githubusercontent.com/97012561/169242044-a0d30e39-34ec-43e8-883e-8099b94804c2.png">
 
-### 열을 묶어 주는 col , colgroup 태그
+### 열을 묶어 주는 col , colgroup 태그 , 스타일 꾸미기 가능
 ```html
 
 
@@ -130,6 +169,16 @@
               <col>      <!-- <col>태그는 열을 1개만 지정할 때 -->
           </colgroup>
 ```  
+
+* 예시 
+```html
+<caption>커피</caption>
+    <colgroup>
+    <col style="background-color:#eee"; >
+    </colgroup>
+```
+<img width="509" alt="스크린샷 2022-05-20 오후 4 54 38" src="https://user-images.githubusercontent.com/97012561/169481182-6959168b-df35-4fd8-9766-0da55abd93a0.png">
+
 
 
 
