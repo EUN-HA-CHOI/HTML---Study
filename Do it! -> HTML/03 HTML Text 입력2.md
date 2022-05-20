@@ -14,15 +14,15 @@
 <body>
   <div id="container">
       <h1>아메리카노</h1>
-      <p>식후아메리카땡 <strong>아이스 아메리카노</strong>는 쓰다</p>
+      <p>식후아메리카땡 <strong>아이스 아메리카노</strong>는 달달</p>
       <em>오늘은 날씨가 너무 덥네용</em>
     </div>
   </div>  
 </body>
 ```
+<img width="269" alt="스크린샷 2022-05-20 오후 2 25 45" src="https://user-images.githubusercontent.com/97012561/169456715-d5d48a35-ff76-407e-9968-14bc0b5d7aa1.png">
 
 
-<img width="271" alt="스크린샷 2022-05-20 오후 2 22 49" src="https://user-images.githubusercontent.com/97012561/169456233-484aa45a-a64e-4760-8091-953039abce70.png">
 
 
 * 텍스트 태그 여러 개 삽입하기 예제  
