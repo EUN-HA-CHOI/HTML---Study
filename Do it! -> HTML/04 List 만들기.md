@@ -32,6 +32,12 @@
           </dl>
 ```  
 
+* 예시
+``` html
+<dl>
+    <dt>아이스 아메리카노</dt>
+    <dd>:에스프레소에 뜨거운 물을 희석시켜 만든 음료</dd> 
+</dl>
 
-
-
+```
+<img width="332" alt="스크린샷 2022-05-20 오후 3 05 10" src="https://user-images.githubusercontent.com/97012561/169463418-546de38c-d7f9-435d-bbf6-f619231eef37.png">
