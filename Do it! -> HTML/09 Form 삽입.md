@@ -44,6 +44,34 @@
 기본형 -> <lable for="id"명>레이블명<input id="id명"></lable>
 ```
 
+* 예시
+
+``` html
+<head>
+  <meta charset="UTF-8">
+  <title>레드향 주문하기</title>
+</head>
+<body>
+  <h1>레드향 주문하기</h1>
+  <form action="">
+    <fieldset>
+      <legend>상품 선택</legend>
+      
+    </fieldset>
+    <fieldset>
+      <legend>배송 정보</legend>
+      
+    </fieldset>   
+    
+    <label>요청 사항<input></label>
+  </form>
+</body>
+```
+ <img width="486" alt="스크린샷 2022-05-23 오후 3 28 12" src="https://user-images.githubusercontent.com/97012561/169757027-3e5e8b41-b097-4f8d-85fe-15fafe3c2dae.png">
+
+
+
+
 
 
 
