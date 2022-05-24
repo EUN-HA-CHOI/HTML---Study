@@ -133,7 +133,8 @@ justify: 양쪽 정렬 (자동 줄바꿈시 오른쪽 경계선 부분 정리)
 </body>
 ```
 ##### text-shadow 
-<img width="327" alt="스크린샷 2022-05-25 오전 12 45 56" src="https://user-images.githubusercontent.com/97012561/170077600-6b8f8eda-1c40-4826-9d4d-460e058730e2.png">  
+<img width="169" alt="스크린샷 2022-05-25 오전 1 06 28" src="https://user-images.githubusercontent.com/97012561/170081830-f4378947-e02e-40db-b59b-c8735f2158e0.png">
+
 
 * 텍스트의 대소 문자를 변환하는 text-transform 속성  
  
