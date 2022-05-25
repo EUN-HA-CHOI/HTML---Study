@@ -23,3 +23,13 @@
 * 표와 셀 테두리를 합쳐 주는 border-collapse 속성  
   `<table> 와 <td> 에서 border 을 사용하면 셀과 셀 사이에 여백이 생기면서 두줄로 표시됨
    이때 두 줄로 둘 것인지 합칠 것인지 결정하는 것`
+
+` border-collapse: collapse; /*테두리 한줄로 설정 안 했을 때*/ `
+
+<img width="301" alt="스크린샷 2022-05-25 오후 8 04 01" src="https://user-images.githubusercontent.com/97012561/170248057-5ecaee7b-8bf6-4955-81af-5fd463a325f3.png">
+
+` border-collapse: collapse; /*테두리 한줄로 설정 했을 때*/ `
+
+<img width="285" alt="스크린샷 2022-05-25 오후 8 05 03" src="https://user-images.githubusercontent.com/97012561/170248229-bc78e499-486c-4a81-b273-57a799f73377.png">
+
+
