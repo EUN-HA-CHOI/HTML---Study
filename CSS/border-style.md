@@ -48,3 +48,30 @@
 ```
 <img width="400" alt="스크린샷 2022-05-26 오후 4 17 21" src="https://user-images.githubusercontent.com/97012561/170438000-aaa4f87c-1397-4e4f-b875-b7f312fef904.png">
 
+* 테두리 스타일 묶어 지정하는 border 속성  
+  -테두리 스타일과 두께, 색상을 한꺼번에 표현  
+ 
+```css
+<style>
+	h1 {
+		padding-bottom: 5px;
+		border-bottom: 3px solid rgb(75, 70, 70); /* 아래쪽 테두리만 3px짜리 회색 실선*/
+	}
+	p {
+		padding: 10px;
+		border: 3px dotted blue; /* 모든 테두리를 3px짜리 파란 점선 */
+	}
+</style>
+```
+
+<img width="493" alt="스크린샷 2022-05-26 오후 4 39 12" src="https://user-images.githubusercontent.com/97012561/170441541-8487eaf7-bcfa-4844-99a1-7a32096a8985.png">
+
+* 둥근 테두리를 만드는 border-radius 속성  
+`border-radius: <크기> | <백분율>`  
+
+`border-radius: 25px;  /* 모든 꼭짓점을 둥글게 */`
+
+<img width="400" alt="스크린샷 2022-05-26 오후 5 03 58" src="https://user-images.githubusercontent.com/97012561/170445574-d2adb4e8-1177-4a66-bdd4-ebc743d21814.png">
+
+
+
