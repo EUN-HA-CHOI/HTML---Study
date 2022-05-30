@@ -43,3 +43,27 @@
 * float 속성을 해제하는 clear 속성  
   -float 속성이 더 이상 유효하지 않다고 알려 주는 속성.  
   -
+
+```css 
+<style>
+		div {
+			padding:20px;
+			margin:10px;
+		}
+		#box1{
+			background:#ffd800;
+			float:left;  /* 왼쪽으로 플로팅 */ 
+		}
+		#box2 {
+			background: #0094ff;
+			float:left;  /* 왼쪽으로 플로팅 */
+		}
+		#box3 {
+			background: #00ff21; /*float 속성을 지정하지 않았으므로 웹 브라우저의 기본 흐름으로 배치됨*/
+		}
+		#box4 {
+			background:#a874ff;
+			clear:left;  /* 플로팅 해제 */
+		}
+	</style>
+```
