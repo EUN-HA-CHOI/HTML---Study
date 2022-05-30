@@ -41,8 +41,7 @@
 <img width="350" alt="스크린샷 2022-05-27 오후 1 21 05" src="https://user-images.githubusercontent.com/97012561/170628504-61c28cd9-9afa-4451-94b0-b2c319c41348.png">
 
 * float 속성을 해제하는 clear 속성  
-  -float 속성이 더 이상 유효하지 않다고 알려 주는 속성.  
-  -
+  -float 속성이 더 이상 유효하지 않다고 알려 주는 속성.
 
 ```css 
 <style>
@@ -67,4 +66,5 @@ div {
 }
 </style>		
 ```
-<img width="400" alt="스크린샷 2022-05-30 오후 12 04 11" src="https://user-images.githubusercontent.com/97012561/170909706-8b48b7e9-5d28-4b74-bcee-10cd2bdefe1f.png">
+<img width="400" alt="스크린샷 2022-05-30 오후 12 04 11" src="https://user-images.githubusercontent.com/97012561/170909706-8b48b7e9-5d28-4b74-bcee-10cd2bdefe1f.png">  
+
