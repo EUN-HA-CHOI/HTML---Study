@@ -46,24 +46,25 @@
 
 ```css 
 <style>
-		div {
-			padding:20px;
-			margin:10px;
-		}
-		#box1{
-			background:#ffd800;
-			float:left;  /* 왼쪽으로 플로팅 */ 
-		}
-		#box2 {
-			background: #0094ff;
-			float:left;  /* 왼쪽으로 플로팅 */
-		}
-		#box3 {
-			background: #00ff21; /*float 속성을 지정하지 않았으므로 웹 브라우저의 기본 흐름으로 배치됨*/
-		}
-		#box4 {
-			background:#a874ff;
-			clear:left;  /* 플로팅 해제 */
-		}
-	</style>
+div {
+ padding:20px;
+ margin:10px;
+}
+#box1 {
+  background:#ffd800;
+  float:left;      /* 왼쪽으로 플로팅 */
+} 
+#box2 {
+  background:#0094ff;
+  float:left;       /* 왼쪽으로 플로팅 */
+}
+#box3 {
+  background: #00ff21;   /*float 속성을 지정하지 않았으므로 웹 브라우저의 기본 흐름으로 배치됨*/
+}
+#box4 {
+  background:#a874ff;
+  clear:left;        /* 플로팅 해제 */
+}
+</style>		
 ```
+<img width="400" alt="스크린샷 2022-05-30 오후 12 04 11" src="https://user-images.githubusercontent.com/97012561/170909706-8b48b7e9-5d28-4b74-bcee-10cd2bdefe1f.png">
