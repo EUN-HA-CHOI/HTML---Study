@@ -141,3 +141,64 @@ background-color: green;
   background: #06f; /*css를 지원하지 않는 웹 브라우저용*/
   background: linear-gradient(to bottom, #06f, white 30%, #06f); /*웨에서부터 30% 위치에 색상 중지점 지정*/
 }
+```
+<img width="300" alt="스크린샷 2022-06-02 오후 2 59 16" src="https://user-images.githubusercontent.com/97012561/171562955-607f51bd-0fe1-497a-abd5-d5d58c978264.png">
+
+
+#### 원형 그러데이션  
+ -타원의 중심에서부터 동심원을 그리며 바깥 방향으로 색상이 바뀜.  
+ -색상이 바뀌기 시작하는 원의 중심과 크기를 지정하고 그러데이션의 모양을 선택.  
+ -`기본형 -> radial-gradient(<모양> <크기> at <위치>, <색상 중지점>, [<색상 중지점>, ...])`  
+
+##### 모양  
+ -원형(circle) 과 타원형(ellipse) , 모양 지정 안 하면 타원형으로 인식됨  
+ 
+```css
+/* 타원형 원형 그러데이션 */
+.grad1{
+   background:red;
+   background:radial-gradient(white, yellow, red); 
+   /* 타원형으로 흰색, 노란색, 빨간색으로 바뀌는 그러데이션 *
+}
+```
+<img width="300" alt="스크린샷 2022-06-02 오후 3 18 43" src="https://user-images.githubusercontent.com/97012561/171565545-0e9e2316-92f4-4dec-943a-5304159fb770.png">
+
+```css
+/* 원형 그러데이션 */
+.grad2{
+  background:red;
+  background:radial-gradient(circle, white, yellow, red);  
+  /* 원형으로 흰색, 노란색, 빨간색으로 바뀌는 그러데이션 */
+}
+```
+
+<img width="300" alt="스크린샷 2022-06-02 오후 3 19 59" src="https://user-images.githubusercontent.com/97012561/171565749-21542098-9f28-4418-af45-cac98789b684.png">
+
+##### 크기 속성값
+ -farthest-corner: 중심에서 가장 먼 코너에 그라데이션을 닿게 한다. 기본값  
+ -farthest-side: 중심에서 가장 먼 사이드에 그라데이션을 닿게 한다.  
+ -closest-corner: 중심에서 가장 가까운 코너에 그라데이션을 닿게 한다.  
+ -closest-corner: 중심에서 가장 가까운 사이드에 그라데이션을 닿게 한다.  
+
+* result
+<img width="300" alt="스크린샷 2022-06-02 오후 3 32 12" src="https://user-images.githubusercontent.com/97012561/171567545-fd145ff4-7e82-4632-a256-e9d2074347ef.png">
+
+##### 위치  
+ -중심의 위치를 바꾼다. 
+ -at 사용
+ -`background: radial-gradient(circle at 20% 20%,white,blue); `  
+
+* result  
+
+<img width="300" alt="스크린샷 2022-06-02 오후 3 34 16" src="https://user-images.githubusercontent.com/97012561/171567869-c1553932-a5f5-403d-aff6-095e4411e734.png">
+
+##### 색상 중지점  
+ -`background:radial-gradient(yellow, white, orange);  
+  /* 노란색에서 흰색을 거쳐 주황색으로 바뀌는 타원형 그러데이션 */`
+  
+<img width="300" alt="스크린샷 2022-06-02 오후 3 37 07" src="https://user-images.githubusercontent.com/97012561/171568235-a61953c8-518d-4210-a849-c181a081b168.png">
+
+
+`background:radial-gradient(yellow, white 10%, orange 60%);   /* 노란색에서 10% 위치의 흰색, 60% 위치의 주황색으로 바뀌는 타원형 그러데이션 */`
+
+<img width="300" alt="스크린샷 2022-06-02 오후 3 37 32" src="https://user-images.githubusercontent.com/97012561/171568309-8f6243d3-c679-487b-b39a-4ff5f8cab18a.png">
