@@ -92,7 +92,41 @@ background-color: green;
 
 ## 그러데이션 효과로 배경 꾸미기  
 
-* 선형 그러데이션  
+#### 선형 그러데이션  
   -색상이 수직, 수평 또는 대각선 방향으로 일정하게 변하는 것을 말한다.  
   -liner-gradient로 색상이 어느 방향으로 바뀌는 지, 어떤 색상으로 바뀌는지 알려 주어야 한다.  
-  -`기본형 -> liner-gradient(to <방향>,또는 <각도>, <색상 중지점>, [<색상 중지점>, ...]);` 
+  -`기본형 -> liner-gradient(to <방향>,또는 <각도>, <색상 중지점>, [<색상 중지점>, ...]);`. 
+
+##### 방향  
+ -그러데이션 방향 지시시 끝 지점을 기준으로 to예약어와 함께 사용. to 다음에 방향을 나타내는 예약어를 최대 2개까지 사용.  
+ -수평 방향을 나타내는 left,right, 수직 방향을 나타내는 top,bottom을 사용.  
+ -ex) to right, to right top 사용.  
+
+``` css
+<style>
+/*방향을 사용해 선형 그러데이션 만들기*/
+.grad {
+	background: blue;
+  background: linear-gradient(to right bottom, blue,white);
+  /* 왼쪽 위에서 오른쪽 아래 방향으로, 파랑에서 흰색으로 */
+}
+</style>
+
+```
+<img width="300" alt="스크린샷 2022-06-02 오후 2 39 09" src="https://user-images.githubusercontent.com/97012561/171560440-88b3ba0a-af1f-4e7d-ad15-794cf388f858.png">
+
+
+##### 각도  
+ -그러데이션에서 색상이 바뀌는 방향을 알려주는 방법  
+ -deg로 표기  
+ -각도에 따른 방향은 윗부분이 0deg이고, 시계방향으로 회전하면서 90deg,180deg 이다.  
+
+``` css 
+/*각도를 사용해 선형 그러데이션 만들기*/
+<style>
+.grad {
+  background: #f00; /*css를 지원하지 않는 웹 브라우저용*/
+  background: linear-gradient(45deg, #f00,#fff); /*45도 방향,빨간색에서 흰색으로*/
+}
+</style>
+```
