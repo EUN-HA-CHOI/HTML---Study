@@ -130,3 +130,14 @@ background-color: green;
 }
 </style>
 ```
+<img width="300" alt="스크린샷 2022-06-02 오후 2 46 43" src="https://user-images.githubusercontent.com/97012561/171561392-3f5a44b8-b5fe-413e-9495-b1e01b41e2e2.png">
+
+##### 색상 중지점  
+ -2가지 이상의 그러데이션을 만들려면 색상이 바뀌는 부분을 지정해야한다.  
+ -싐표(,)로 구분  
+
+```css
+.grad {
+  background: #06f; /*css를 지원하지 않는 웹 브라우저용*/
+  background: linear-gradient(to bottom, #06f, white 30%, #06f); /*웨에서부터 30% 위치에 색상 중지점 지정*/
+}
