@@ -202,3 +202,5 @@ background-color: green;
 `background:radial-gradient(yellow, white 10%, orange 60%);   /* 노란색에서 10% 위치의 흰색, 60% 위치의 주황색으로 바뀌는 타원형 그러데이션 */`
 
 <img width="300" alt="스크린샷 2022-06-02 오후 3 37 32" src="https://user-images.githubusercontent.com/97012561/171568309-8f6243d3-c679-487b-b39a-4ff5f8cab18a.png">
+
+
