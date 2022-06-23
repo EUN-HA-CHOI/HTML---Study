@@ -43,3 +43,10 @@
 * 값이 반복될 때 줄여서 표현할 수 있는 repeat() 함수   
   -ex. `grid-template-columns: 1fr 1fr 1fr` -> `grid-template-columns: repeat(3, 1fr)`   
 
+* 최솟값과 최댓값을 지정하는 minmax() 함수  
+  -minmax() 함수를 사용하면 줄 높이를 고정하지 않고 최솟값과 최댓값을 사용해서 유연하게 지정할 수 있다.  
+  -`grid-template-rows: minmax(100px, auto); /*줄 높이는 최소 100px*/`   
+
+* 자동으로 칼럼 개수를 조절하는 auto-fill, auto-fit 값  
+  -repeat() 함수를 사용해서 크기가 같은 칼럼을 반복할 때  
+   ``
