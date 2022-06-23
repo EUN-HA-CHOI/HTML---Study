@@ -36,21 +36,24 @@
     
     
 * 상대적인 크기를 지정하는 fr 단위  
-  -반응형 웹 디자인에는 px 단위를 사용하면 항상 크기가 고정되므로 적합하지 않다.  
+  * 반응형 웹 디자인에는 px 단위를 사용하면 항상 크기가 고정되므로 적합하지 않다.  
   그래서 상대적인 크기를 지정할 수 있는 fr(fraction)단위 사용  
-  -ex.3개의 너비가 같은 칼럼 -> `grid-template-columns: 1fr 1fr 1fr`   
+  * ex.3개의 너비가 같은 칼럼 -> `grid-template-columns: 1fr 1fr 1fr`   
 
 * 값이 반복될 때 줄여서 표현할 수 있는 repeat() 함수   
-  -ex. `grid-template-columns: 1fr 1fr 1fr` -> `grid-template-columns: repeat(3, 1fr)`   
+  * ex. `grid-template-columns: 1fr 1fr 1fr` -> `grid-template-columns: repeat(3, 1fr)`   
 
 * 최솟값과 최댓값을 지정하는 minmax() 함수  
-  -minmax() 함수를 사용하면 줄 높이를 고정하지 않고 최솟값과 최댓값을 사용해서 유연하게 지정할 수 있다.  
-  -`grid-template-rows: minmax(100px, auto); /*줄 높이는 최소 100px*/`   
+  * minmax() 함수를 사용하면 줄 높이를 고정하지 않고 최솟값과 최댓값을 사용해서 유연하게 지정할 수 있다.  
+  * `grid-template-rows: minmax(100px, auto); /*줄 높이는 최소 100px*/`   
 
 * 자동으로 칼럼 개수를 조절하는 auto-fill, auto-fit 값  
-  -repeat() 함수를 사용해서 크기가 같은 칼럼을 반복할 때  
+  * repeat() 함수를 사용해서 크기가 같은 칼럼을 반복할 때  
    `grid-template-columns: repeat(3, 1fr)` ->  `grid-template-columns: repeat(auto-fit,200px)`
-  -화면이 넓어지면 칼럼 개수가 많아지고 반대로 화면이 좁아지면 칼럼 개수가 줄어든다.  
+  * 화면이 넓어지면 칼럼 개수가 많아지고 반대로 화면이 좁아지면 칼럼 개수가 줄어든다.  
  
- * 그리드 
+ * 그리드 항목의 간격을 지정하는 grid-column-gap, grid-row-gap, grid-gap 속성  
+    * grid-column-gap : 칼럼과 칼럼 사이 간격 지정  
+    * grid-row-gap : 줄과 줄 사이 간격 지정  
+    * grid-gap : 칼럼과 줄 사이의 간격을 한꺼번에 지정  
   
