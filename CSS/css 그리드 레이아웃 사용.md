@@ -49,4 +49,8 @@
 
 * 자동으로 칼럼 개수를 조절하는 auto-fill, auto-fit 값  
   -repeat() 함수를 사용해서 크기가 같은 칼럼을 반복할 때  
-   ``
+   `grid-template-columns: repeat(3, 1fr)` ->  `grid-template-columns: repeat(auto-fit,200px)`
+  -화면이 넓어지면 칼럼 개수가 많아지고 반대로 화면이 좁아지면 칼럼 개수가 줄어든다.  
+ 
+ * 그리드 
+  
