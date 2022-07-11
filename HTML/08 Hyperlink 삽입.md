@@ -14,6 +14,11 @@
 <div>
   <p><a href="../05/order.html">주문서 작성하기</a></p>
 </div>
+
+ <p>
+  <a href="한국형 웹 콘텐츠 접근성 지침 2.1.pdf" target="_blank" title="새창">한국형 웹 콘텐츠 접근성 지침 2.1 내려받기</a>
+</p>
+
 ```
 
 <img width="393" alt="스크린샷 2022-05-23 오후 2 29 00" src="https://user-images.githubusercontent.com/97012561/169749593-d8b2c05a-7d07-47da-b65b-6595e5b88e67.png">
