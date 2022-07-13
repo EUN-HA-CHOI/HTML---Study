@@ -41,5 +41,32 @@
 <img width="309" alt="스크린샷 2022-05-20 오후 5 39 46" src="https://user-images.githubusercontent.com/97012561/169489553-cc0b1617-ecf8-4be9-85b1-596a8bf71b5b.png">
 
 
+```html
+<body>
+  <!-- 
+    HTML5에서는 <video> 태그로 동영상 삽입,
+    속성: src, poster, preload, autoplay, loop, controls, width, height
+    단, 모바일 기기에서는 자동실행 안됨.
+    muted: 비디오를 재생할 때 소리는 끄고 화면만 재생, 오디오를 
+    문서 배경으로 사용하거나 소리가 필요하지 않을 때 사용
+   -->
+  
+  <video width="480" height="272" poster="video/poster.jpg" autoplay controls loop muted>
+    <source src="video/spring.mp4" type="video/mp4" />
+    <source src="video/spring.ogv" type="video/dgv" />
+    <source src="video/spring.webm" type="video/webm" />
+  </video>
+  <hr/>
+  
+  <!-- 유투브 동영상 첨가 공유하기 -> 퍼가기 -> 복사 -->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/YKvx-igUpYc?start=48" 
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+   gyroscope; picture-in-picture" allowfullscreen>
+   </iframe>
+</body>
+```
+
+<img width="480" alt="스크린샷 2022-07-13 오후 11 27 33" src="https://user-images.githubusercontent.com/97012561/178758279-f96da45f-5120-4e9c-b36e-0d95d3526255.png">
+
 
 
