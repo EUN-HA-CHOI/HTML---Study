@@ -49,6 +49,7 @@
     단, 모바일 기기에서는 자동실행 안됨.
     muted: 비디오를 재생할 때 소리는 끄고 화면만 재생, 오디오를 
     문서 배경으로 사용하거나 소리가 필요하지 않을 때 사용
+    type에 비디오 타입을 작성.
    -->
   
   <video width="480" height="272" poster="video/poster.jpg" autoplay controls loop muted>
@@ -68,5 +69,16 @@
 
 <img width="480" alt="스크린샷 2022-07-13 오후 11 27 33" src="https://user-images.githubusercontent.com/97012561/178758279-f96da45f-5120-4e9c-b36e-0d95d3526255.png">
 
+
+
+```html
+<!-- audio -->
+<audio autoplay controls loop>
+  <source src="audio/old_melody.mp3" type="audio/mp3" />
+  <source src="audio/old_melody.ogg" type="audio/ogg" />
+  <source src="audio/old_melody.wav" type="audio/wav" /> 
+</audio>
+```
+<img width="301" alt="스크린샷 2022-07-13 오후 11 32 00" src="https://user-images.githubusercontent.com/97012561/178759332-9d4b337b-9fbb-4de0-9d61-9e0eb0ed12a9.png">
 
 
