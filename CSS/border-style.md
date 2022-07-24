@@ -73,4 +73,71 @@
 
 <img width="400" alt="스크린샷 2022-05-26 오후 5 03 58" src="https://user-images.githubusercontent.com/97012561/170445574-d2adb4e8-1177-4a66-bdd4-ebc743d21814.png">
 
+<hr/>
 
+### (예제)박스 모델 3단 만들기
+
+```html
+<body>
+  <div id="wrap">
+    <div id="top">top</div>
+    <div id="middle">middle</div>
+    <div id="bottom">bottom</div>
+  </div>  
+</body>
+```
+
+```css
+<!-- 
+전체 wrap 실제크기 가로 600px, 세로 600px 
+박스 3개크기 동일 - 가로 600px, 세로 200px
+안쪽 여백 동일 - 20px
+테두리선 동일 - 5px
+바깥쪽여백 동일 - 11px
+전체 wrap 여백 - 10px
+-->
+
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+  }
+  #wrap {
+    width: 580px;
+    height: 580px;
+    background-color: yellow;
+    padding: 10px;
+  }
+  #top {
+    width: 530px;
+    height: 136px;
+    background-color: red;
+    border: 5px solid black;
+    padding: 20px;
+    margin-bottom: 11px;
+  }
+  #middle {
+    width: 530px;
+    height: 136px;
+    background-color: green;
+    border: 5px solid black;
+    padding: 20px;
+    margin-bottom: 11px;
+  }
+  #bottom {
+    width: 530px;
+    height: 136px;
+    background-color: blue;
+    border: 5px solid black;
+    padding: 20px;
+    margin-bottom: 11px;
+   }
+</style>
+```
+
+<img width="300" alt="스크린샷 2022-07-24 오후 8 17 24" src="https://user-images.githubusercontent.com/97012561/180644540-07ba6eb9-6ccd-4d79-bed0-e1a88d06c826.png">
