@@ -75,6 +75,33 @@
 
 <hr/>
 
+* 박스모델 실제 너비감 결정하기 ! (헷갈림주의)
+
+```
+.container {
+  background-color: orange;
+  width: 400px;
+  border: 1px solid red;
+}
+
+.box {/Users/choieunha/Desktop/07.18/border.html
+/Users/choieunha/Desktop/07.18/box2.html
+  color: white;
+  background-color: green;
+  width: 200px;
+  height: 30px;
+  padding: 20px;
+  border: 5px dashed black;
+  margin: 15px;
+}
+```
+  예를 들어 전체 너비(width)를 400px로 설정했다. 그 안에 박스모델의 너비는 200px 이라고 가정하자 실제 화면에서 차지하는 너비는 padding과 border의 두께까지 고려해야 한다. 위의 예제의 box 실제 너비는 좌우 padding 값과 좌우 border 값을 더한 250px이 됩니다.
+  
+  위의 예제의 경우 box 실제 너비는 : 200px + (20px * 2) + (5px * 2) = 250px 이다.
+  container의 실제 너비는 : 400px + (0px * 2) + (1px * 2) = 402px 이다.
+  
+  만약 box를 container 속에 딱 맞게 하려면 width 값은 얼마일까? 먼저 box의 margin 속성값을 0으로 설정하여 container와의 간격을 제거해야한다. 다음 container의 좌우 padding 값과 좌우 border 값을 빼줘야 된다. 
+400px - (20px * 2) - (5px * 2) = 350px
 ### (예제)박스 모델 3단 만들기
 
 ```html
