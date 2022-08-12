@@ -37,7 +37,7 @@
 </html>
 ```
 
-* 예제 (태극기.)
+* 예제 (태극기,초승달)
 ```
 <!DOCTYPE html>
 <html lang="en">
