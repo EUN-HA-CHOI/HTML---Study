@@ -1,4 +1,4 @@
-### css3 : animation  
+### css3 : animation 예제1
 
 ```css
 <style>
@@ -52,3 +52,50 @@
 </style>
 ```
 [적용 결과](http://127.0.0.1:5500/animation.html)
+
+***
+### css3 : animation 예제2
+```css
+<style>
+    .clock {
+      position: relative;
+      width: 500px;
+      margin: 100px 300px;}
+
+    .w1 {
+      position: absolute;
+      top:100px;
+      left: 0;
+      width: 10px;
+      height: 200px;
+      background: red;
+      animation: ani 43200s linear 0s infinite normal;
+    }
+   
+    .w2 {
+      position: absolute;
+      top:50px;
+      left: 0;
+      width: 10px;
+      height: 250px;
+      background: green;    
+      animation: ani 3600s linear 0s infinite normal ;
+    }
+    .w3 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 300px;
+      background: blue;   
+      animation: ani 60s linear 0s infinite normal ;
+    }
+
+    @keyframes  ani {
+      0% {transform: rotate(0deg); transform-origin: center bottom;}
+      100% {transform: rotate(360deg); transform-origin: 50% 100%;}
+    }
+  </style>
+```
+
+[적용결과](http://127.0.0.1:5500/animation2.html)
