@@ -35,7 +35,7 @@ promise().then((message) => {
 promise 라는 이름의 전역 변수에 프로미스를 할당 하였고 그 안에는 1 + 1 이 2라면 resolve 함수를 호출하고 아니면 reject 함수를 호출하도록 구현했다.  
 그 다음 프로미스의 후속 처리 메소드인 then(), catch()를 통해 비동기 처리 결과 메세지를 전달받아 처리하였다.   
 
-**후속 처리 메소드**  
+* **후속 처리 메소드**  
 프로미스로 구현된 비동기 함수를 호출하는 측에서는 프로미스 객체의 후속 처리 메소드(then, catch)를 통해 비동기 처리 결과 또는 에러 메세지를 전달받아 처리한다.  
 
 * then
@@ -50,4 +50,57 @@ promise 라는 이름의 전역 변수에 프로미스를 할당 하였고 그 �
    
 **프로미스 에러 처리 방법**  
 프로미스 에러 처리는 가급적 catch 메소드를 이용하는 것이 좋다. 그 이유는 다음과 같다.  
+
+ resolve 함수가 정상적으로 호출되고 프로미스가 성공 상태가 되며 then 메소드의 첫 번째 콜백함수가 실행된다.   
+첫 번째 콜백함수에서 에러가 발생하였고 두 번째 콜백함수가 에러를 잡아내지 못하고 있다.   
+```
+const promise = () => new Promise((resolve, reject) => {
+    let a = 1 + 1
+
+    if(a == 2) {
+        resolve('success')
+    } else {
+        reject('failed')
+    }
+})
+
+promise().then((message) => {
+    console.log('This is in the then ' +  message)
+    throw new Error('failed')
+}, (error) => {
+    console.log('This is in the then ' + error)
+})
+```
+```
+This is in the then success
+(node:52580) UnhandledPromiseRejectionWarning: Error: failed
+```
+
+catch 메소드를 사용하는 경우에는 then 메소드의 첫 번째 콜백함수에서 발생하는 에러를 잡아내는 것을 볼 수 다.
+
+```
+const promise = () => new Promise((resolve, reject) => {
+    let a = 1 + 1
+
+    if(a == 2) {
+        resolve('success')
+    } else {
+        reject('failed')
+    }
+})
+
+promise().then((message) => {
+    console.log('This is in the then ' +  message)
+    throw new Error('failed')
+}).catch((error) => {
+    console.log('This is in the catch ' +  error)
+})
+```
+```
+This is in the then success
+This is in the catch Error: failed
+```
+
+
+  
 
