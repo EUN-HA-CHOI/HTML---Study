@@ -1,6 +1,6 @@
 ## 알고리즘 Day_1 
 
-## 문제 1
+## 문제_1
 ### 문제 설명  
 문자열 my_string, overwrite_string과 정수 s가 주어집니다. 문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 문자열 overwrite_string으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.  
 
@@ -25,7 +25,7 @@ function solution(my_string, overwrite_string, s) {
 
 <hr> 
 
-## 문제2   
+## 문제_2   
 ### 문제 설명
 길이가 같은 두 문자열 str1과 str2가 주어집니다.  
 두 문자열의 각 문자가 앞에서부터 서로 번갈아가면서 한 번씩 등장하는 문자열을 만들어 return 하는 solution 함수를 완성해 주세요.
@@ -70,5 +70,18 @@ function solution(str1, str2) {
 
 <hr> 
 
+## 문제_3  
 
+### 문제 설명
+문자들이 담겨있는 배열 arr가 주어집니다. arr의 원소들을 순서대로 이어 붙인 문자열을 return 하는 solution함수를 작성해 주세요.
 
+### 입출력 예  
+<img width="166" alt="스크린샷 2023-05-30 오후 3 12 24" src="https://github.com/EUN-HA-CHOI/HTML-CSS-JS-Study/assets/97012561/8cc24d35-0414-4139-bead-b96929d0480f">
+
+### 해결  
+```javascript 
+function solution(arr) {
+    var answer = '';
+    return answer += arr.join('');
+} 
+```
