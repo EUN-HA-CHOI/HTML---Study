@@ -65,3 +65,10 @@ function solution(str1, str2) {
     return answer;
 }
 ```
+
+`charAt` 메서드를 사용함.  
+
+<hr> 
+
+
+
