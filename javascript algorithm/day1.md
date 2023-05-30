@@ -40,7 +40,7 @@ function solution(my_string, overwrite_string, s) {
 
 
 ### 시도  
-```
+```javascript
 function solution(str1, str2) {
     var answer = '';
    
@@ -54,4 +54,14 @@ function solution(str1, str2) {
 }
 ```
 
-위의 
+위의 코드로 작성 시 만약 `solution("fdsfa", "bbbzz");` 로 호출 하게 되면 `'fbfbfbfzfz'` 결과값이 나오므로 정답이 아니다.  
+### 해결  
+```
+function solution(str1, str2) {
+    var answer = '';
+    for(let i=0;i<str1.length;i++) {  
+        answer += str1[i] + str2.charAt(i);  
+    }
+    return answer;
+}
+```
