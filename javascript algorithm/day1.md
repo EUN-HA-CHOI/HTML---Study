@@ -56,7 +56,7 @@ function solution(str1, str2) {
 
 위의 코드로 작성 시 만약 `solution("fdsfa", "bbbzz");` 로 호출 하게 되면 `'fbfbfbfzfz'` 결과값이 나오므로 정답이 아니다.  
 ### 해결  
-```
+```javascript
 function solution(str1, str2) {
     var answer = '';
     for(let i=0;i<str1.length;i++) {  
