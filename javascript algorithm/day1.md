@@ -85,3 +85,75 @@ function solution(arr) {
     return answer += arr.join('');
 } 
 ```
+
+<hr>
+
+## 문제_4 : 더 크게 합치기   
+
+### 문제 설명
+연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.  
+
+- 12 ⊕ 3 = 123
+- 3 ⊕ 12 = 312
+양의 정수 a와 b가 주어졌을 때, a ⊕ b와 b ⊕ a 중 더 큰 값을 return 하는 solution 함수를 완성해 주세요.  
+
+단, a ⊕ b와 b ⊕ a가 같다면 a ⊕ b를 return 합니다.  
+
+### 제한사항  
+- 1 ≤ a, b < 10,000  
+
+### 입출력 예   
+<img width="187" alt="스크린샷 2023-05-30 오후 3 16 11" src="https://github.com/EUN-HA-CHOI/HTML-CSS-JS-Study/assets/97012561/5df5b275-51d7-47e7-96db-f9743d2f85f7">  
+
+### 해결  
+```javascript 
+function solution(a, b) {
+    var answer = '';
+    var num = String;   
+    if(num(a) + num(b) > num(b) + num(a)) {
+        answer += num(a) + num(b)
+    }
+    else {
+        answer += num(b) + num(a)
+    }
+    return  parseInt(answer);
+    
+}
+```
+
+
+<hr>
+
+## 문제_5 : 두 수의 연산값 비교하기  
+
+### 문제 설명
+연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.  
+
+- 12 ⊕ 3 = 123  
+- 3 ⊕ 12 = 312  
+양의 정수 a와 b가 주어졌을 때, a ⊕ b와 2 * a * b 중 더 큰 값을 return하는 solution 함수를 완성해 주세요.  
+
+단, a ⊕ b와 2 * a * b가 같으면 a ⊕ b를 return 합니다.  
+
+
+### 입출력 예  
+<img width="181" alt="스크린샷 2023-05-30 오후 3 56 31" src="https://github.com/EUN-HA-CHOI/HTML-CSS-JS-Study/assets/97012561/7f0fc95c-1ae1-4c03-951f-17596688b021">
+
+### 해결  
+```javascript 
+function solution(a, b) {
+    var answer = '';
+    var num = String;   
+    if(num(a) + num(b) > 2 * num(a) * num(b)) {
+        answer += num(a) + num(b)
+    }
+    else {
+        answer += 2 * num(a) * num(b)
+    }
+    return  parseInt(answer);
+    
+}
+```
+
+
+
