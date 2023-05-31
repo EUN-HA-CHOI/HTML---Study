@@ -61,7 +61,7 @@ function solution(number, n, m) {
 ### 입출력 예  
 <img width="118" alt="스크린샷 2023-05-31 오후 3 30 27" src="https://github.com/EUN-HA-CHOI/HTML-CSS-JS-Study/assets/97012561/1acc9b77-2769-454c-854a-32fa8805a303">
 
-## 해결 (못함)   
+### 해결 (못함)   
 ```
 function solution(n) {
     var answer = 0;
