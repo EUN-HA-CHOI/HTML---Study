@@ -100,6 +100,55 @@ function solution(n) {
 ### 입출력 예  
 <img width="318" alt="스크린샷 2023-05-31 오후 4 07 24" src="https://github.com/EUN-HA-CHOI/HTML-CSS-JS-Study/assets/97012561/3eaaa0fa-2ba2-47b3-966d-a4d47050efab">
 
+### 해결 (못함) 
+```javascript
+const operations = {
+  '>=': (n, m) => n >= m,
+  '<=': (n, m) => n <= m,
+  '>!': (n, m) => n > m,
+  '<!': (n, m) => n < m,
+};
+
+function solution(ineq, eq, n, m) {
+  const op = operations[ineq + eq];
+  return Number(op(n, m));
+}
+```
+
+<hr>
+
+## 문제 5 : flag 에 따라 다른 값 반환 하기  
+
+### 문제 설명
+두 정수 a, b와 boolean 변수 flag가 매개변수로 주어질 때, flag가 true면 a + b를 false면 a - b를 return 하는 solution 함수를 작성해 주세요.
+
+### 제한사항  
+- -1000 ≤ a, b ≤ 1,000  
+
+### 입출력 예 
+<img width="247" alt="스크린샷 2023-06-01 오전 11 56 17" src="https://github.com/EUN-HA-CHOI/HTML-CSS-JS-Study/assets/97012561/ac278170-004f-48a6-b9ae-5ae5c50b2381">
+
+### 해결  
+```javascript
+function solution(a, b, flag) {
+    var answer = 0;
+    
+    if(flag == true) {
+       answer += a + b;
+    }
+    else {
+      answer += a-b;
+    }
+    return answer;
+}
+```
+
+- 또 다른 풀이   
+```javascript
+function solution(a, b, flag) {
+    return flag ? a + b : a- b;
+}
+```
 
 
 
