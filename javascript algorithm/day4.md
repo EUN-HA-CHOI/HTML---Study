@@ -11,7 +11,7 @@
 <img width="244" alt="스크린샷 2023-06-02 오후 2 31 51" src="https://github.com/EUN-HA-CHOI/HTML-CSS-JS-Study/assets/97012561/15d2c28f-2f39-4021-a283-222a2f156483">
 
 
-### 해결 
+### 해결 (x)
 ```javascript
 function solution(num_list) {
     var answer = [];
