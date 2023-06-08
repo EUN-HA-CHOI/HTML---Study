@@ -86,6 +86,37 @@ array1.reduce((a, b) => (a + b)) / array1.length;
 
 ### 해결(x)
 ```javascript
-
+function solution(numLog) {
+    const controller = {
+        "1":"w",
+        "-1":"s",
+        "10":"d",
+        "-10":"a"
+    }
+    return numLog.slice(1).reduce((acc, cur, idx)=>acc + controller[`${numLog[idx+1]-numLog[idx]}`],"");
+}
 ```
 
+
+<hr>
+
+## 문제 3 : 수열과 구간 쿼리 3
+
+### 문제설명 
+정수 배열 arr와 2차원 정수 배열 queries이 주어집니다. queries의 원소는 각각 하나의 query를 나타내며, [i, j] 꼴입니다.
+각 query마다 순서대로 arr[i]의 값과 arr[j]의 값을 서로 바꿉니다.
+위 규칙에 따라 queries를 처리한 이후의 arr를 return 하는 solution 함수를 완성해 주세요.
+ 
+### 제한사항
+- 1 ≤ arr의 길이 ≤ 1,000
+  - 0 ≤ arr의 원소 ≤ 1,000,000
+- 1 ≤ queries의 길이 ≤ 1,000
+  - 0 ≤ i < j < arr의 길이
+
+### 입출력 예
+<img width="380" alt="스크린샷 2023-06-08 오후 2 26 03" src="https://github.com/EUN-HA-CHOI/HTML-CSS-JS-Study/assets/97012561/57076784-c37d-414f-81fd-07f2d2d000d1">
+
+### 해결
+```javascript
+
+```
