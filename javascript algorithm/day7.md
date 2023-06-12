@@ -82,3 +82,52 @@ function solution(array) {
 }
 //여기서 더 수정 할 수도 있을 것 같음.
 ```
+
+<hr>
+
+## 문제 4 : 최빈값 구하기
+
+### 문제 설명
+최빈값은 주어진 값 중에서 가장 자주 나오는 값을 의미합니다. 정수 배열 array가 매개변수로 주어질 때, 최빈값을 return 하도록 solution 함수를 완성해보세요. 최빈값이 여러 개면 -1을 return 합니다.
+
+### 제한사항
+- 0 < array의 길이 < 100
+- 0 ≤ array의 원소 < 1000
+
+### 입출력 예
+<img width="185" alt="스크린샷 2023-06-12 오후 2 02 48" src="https://github.com/EUN-HA-CHOI/HTML-CSS-JS-Study/assets/97012561/070277c7-4a54-45d9-ac8b-64894b31aef8">
+
+### 해결 (x)
+```javascript
+function solution(array) {
+  // array의 길이가 1일 경우 갯수가 하나이기에
+  // 그 값을 반환해준다.
+  if (array.length === 1) return array[0];
+
+  const obj = {};
+  const answer = [];
+
+  // array를 forEach() 반복문을 돌려
+  // obj에 값이 없으면 값을 만들고 1을 넣어주고
+  // obj에 값이 있으면 기존 값 +1을 해준다.
+  array.forEach((n) => {
+    obj[n] = ++obj[n] || 1;
+  });
+
+  // 값과 그 값의 갯수를 정의해 둔 obj를 array에 넣어준다.
+  // ex) [[1, 1], [2, 1], [3, 3], [4, 1]]
+  for (let key in obj) {
+    answer.push([key, obj[key]]);
+  }
+
+  // answer 배열을 갯수 기준으로 내림차순 정렬을 해준다.
+  // ex) [[3, 3], [4, 1], [2, 1], [1, 1]]
+  answer.sort((a, b) => b[1] - a[1]);
+
+  // 최빈값이 여러 개면 -1을 반환해야 하기 때문에 확인한다.
+  if (answer.length > 1 && answer[0][1] === answer[1][1]) return -1;
+
+  // 여러개가 아니라면 정렬한 처음 값을 반환한다.
+  return Number(answer[0][0]);
+}
+```
