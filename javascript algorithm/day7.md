@@ -97,7 +97,7 @@ function solution(array) {
 ### 입출력 예
 <img width="185" alt="스크린샷 2023-06-12 오후 2 02 48" src="https://github.com/EUN-HA-CHOI/HTML-CSS-JS-Study/assets/97012561/070277c7-4a54-45d9-ac8b-64894b31aef8">
 
-### 해결 (x)
+### 해결 (x, )
 ```javascript
 function solution(array) {
   // array의 길이가 1일 경우 갯수가 하나이기에
@@ -131,3 +131,32 @@ function solution(array) {
   return Number(answer[0][0]);
 }
 ```
+
+<hr>
+
+## 문제 5 : 짝수는 싫어요
+
+### 문제 설명
+정수 n이 매개변수로 주어질 때, n 이하의 홀수가 오름차순으로 담긴 배열을 return하도록 solution 함수를 완성해주세요.
+
+### 제한사항
+- 1 ≤ n ≤ 100
+
+### 입출력 예
+<img width="243" alt="스크린샷 2023-06-12 오후 4 03 46" src="https://github.com/EUN-HA-CHOI/HTML-CSS-JS-Study/assets/97012561/6811eb4f-f8fa-437f-aa4c-d0a1376c9f78">
+
+
+### 해결 (세모)
+```javascript
+function solution(n) {
+ let answer = [];
+   for(let i=1; i<=n; i++){
+       if(i % 2 == 1){
+           answer.push(i)
+       }
+   }
+    return answer;
+}
+```
+사실 겁나 쉬운 문제였는데 내가 너무 어렵게 생각해서 풀었던 모양이다. 이걸 거의 1시간동안 고민했다니 !   
+접근은 똑같았는데, if 문 안에서 ` answer.push(i)` 부분에 `i` 를 넣어주지 않고 `n[i]` 이런식으로 해줬다. 잘 알던건데 내 실수다. 실수를 기회로 만들자 ^^   
