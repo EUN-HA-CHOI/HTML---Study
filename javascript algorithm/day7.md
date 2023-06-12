@@ -59,10 +59,26 @@ function solution(num1, num2) {
 ### 입출력 예
 <img width="182" alt="스크린샷 2023-06-12 오전 11 56 40" src="https://github.com/EUN-HA-CHOI/HTML-CSS-JS-Study/assets/97012561/8c020493-70a5-4345-8c04-7f7786eea6ea">
 
-### 해결
-```javascript
-function solution(num1, num2) {
-    var answer = 0;
-    return answer = num1%num2;
+### 해결 (첫 시도 : 테스트만 통과하고 틀림.)
+```javascript 
+function solution(array) {
+    array.sort();
+    var center = parseInt(array.length / 2);
+    if(array.length % 2 == 1) {
+    return array[center];
+    }
 }
+```
+
+### 해결 (두 번째 시도)
+```javascript 
+function solution(array) {
+    let answer = array.sort(function(a,b){
+        return a-b });  //오름차순 정렬 answer에 할당
+    var center = parseInt(array.length / 2);  // 배열의 길이를 2로 나눈 몫을 할당
+    if(array.length % 2 == 1) {  // 나눈 값이 홀수인 경우 
+    return answer = array[center];
+    }
+}
+//여기서 더 수정 할 수도 있을 것 같음.
 ```
