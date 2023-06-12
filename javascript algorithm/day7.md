@@ -97,7 +97,7 @@ function solution(array) {
 ### 입출력 예
 <img width="185" alt="스크린샷 2023-06-12 오후 2 02 48" src="https://github.com/EUN-HA-CHOI/HTML-CSS-JS-Study/assets/97012561/070277c7-4a54-45d9-ac8b-64894b31aef8">
 
-### 해결 (x, )
+### 해결 (x,이해못함)
 ```javascript
 function solution(array) {
   // array의 길이가 1일 경우 갯수가 하나이기에
