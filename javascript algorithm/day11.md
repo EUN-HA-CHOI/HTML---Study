@@ -56,8 +56,9 @@ function solution(my_string, letter) {
     return answer;
 }
 
+// 또는 
 // function solution(my_string, letter) {
-//    return my_string.replace(letter, '');
+//    return my_string.replaceAll(letter, '');
 //  }
 ```
 
@@ -93,7 +94,6 @@ function solution(my_string, letter) {
 ### 입출력 예 
 <img width="122" alt="스크린샷 2023-06-15 오후 2 43 50" src="https://github.com/EUN-HA-CHOI/HTML-CSS-JS-Study/assets/97012561/0504ad7a-c495-4290-9531-be19df3164cc">
 
-
 ### 입출력 예 설명 
 - angle이 70이므로 예각입니다. 따라서 1을 return합니다.
 - angle이 91이므로 둔각입니다. 따라서 3을 return합니다.
@@ -101,7 +101,11 @@ function solution(my_string, letter) {
 
 ### 해결 
 ```javascript
-
+function solution(n, k) {
+    var answer = 0;
+    let sum = Math.floor(n/10);
+    return answer =  (n*12000)+((k-sum)*2000);
+}
 ```
 
 <hr>
