@@ -55,6 +55,23 @@ function solution(my_string, letter) {
     }
     return answer;
 }
+
+// function solution(my_string, letter) {
+//    return my_string.replace(letter, '');
+//  }
+```
+
+- 또 다른 방법
+```javascript
+function solution(my_string, letter) {
+    var answer = '';
+    for(let i=0; i<my_string.length; i++){
+        if(my_string[i] !== letter){
+   answer +=my_string[i];
+       }
+    }
+    return answer;
+}
 ```
 
 <hr>
