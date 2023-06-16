@@ -24,3 +24,32 @@ function solution(my_string) {
     return my_string
 }
 ```
+
+<hr>
+
+## 문제 2 : 배열 원소의 길이
+
+### 문제 설명
+문자열 배열 strlist가 매개변수로 주어집니다. strlist 각 원소의 길이를 담은 배열을 retrun하도록 solution 함수를 완성해주세요.
+
+### 제한사항
+- 1 ≤ strlist 원소의 길이 ≤ 100
+- strlist는 알파벳 소문자, 대문자, 특수문자로 구성되어 있습니다.
+
+### 입출력 예
+<img width="324" alt="스크린샷 2023-06-16 오후 1 37 55" src="https://github.com/EUN-HA-CHOI/HTML-CSS-JS-Study/assets/97012561/1728d026-9e4e-4d6e-a1ba-a2a18797bd96">
+
+### 입출력 예 설명
+- ["We", "are", "the", "world!"]의 각 원소의 길이인 [2, 3, 3, 6]을 return합니다.
+- ["I", "Love", "Programmers."]의 각 원소의 길이인 [1, 4, 12]을 return합니다.
+
+### 해결
+```javascript
+function solution(strlist) {
+    var answer = [];
+    for(let i=0; i<strlist.length; i++){
+      answer.push(strlist[i].length);
+    }
+    return answer;
+}
+```
